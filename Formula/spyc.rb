@@ -1,23 +1,23 @@
 class Spyc < Formula
   desc "Keyboard-driven, MCP-native terminal file commander"
   homepage "https://github.com/Tripstack-Corp/spyc"
-  version "2.0.0-rc.16"
+  version "2.0.0-rc.17"
   license "BSD-3-Clause"
 
   on_macos do
     # Universal binary (arm64 + x86_64), so one asset serves both Macs.
     url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-macos-universal.tar.gz"
-    sha256 "2270d59f45c8cc785c9d2af41234ccaf31c0f2d722dde9709f33555adb2da89d"
+    sha256 "1d2e912b9c79f1b0bd746cc56d25e2ecf15105628573c61e4cbcd8b36431524a"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-linux-x86_64.tar.gz"
-      sha256 "416e9017604db815dab88884ef0329564b26d50b2e8363f3475b69e1749121e4"
+      sha256 "497743d5e1ef1116edbcd35cb2e42d6abc765158dbe8e091ffb0ed10c8c688c8"
     end
     on_arm do
       url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-linux-aarch64.tar.gz"
-      sha256 "69810903bf1d97a929064d936cfe78b89ccb1ea141d6d57130af3b23188c5fc6"
+      sha256 "eba2a107af4dad10450d38564ece50c6bf4121ff87d48d5b75284432247be92e"
     end
   end
 
