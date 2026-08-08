@@ -2,7 +2,7 @@
 class Rmatrix < Formula
   desc "Digital rain for modern terminals"
   homepage "https://github.com/Tripstack-Corp/rmatrix"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   # `brew install --HEAD rmatrix` builds main from source. Declared before the
@@ -15,22 +15,22 @@ class Rmatrix < Formula
   on_macos do
     on_arm do
       url "https://github.com/Tripstack-Corp/rmatrix/releases/download/v#{version}/rmatrix-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "bf06d401b7d5ae784f62ee61ff0bd930e36b89daa108bec4d6ce8e4f5a0d29d4"
+      sha256 "cf7e030a2dd05862433faf1987489b1e00461f93db57d189cbec02a319f6252d"
     end
     on_intel do
       url "https://github.com/Tripstack-Corp/rmatrix/releases/download/v#{version}/rmatrix-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5bd8ce797465156e348e013699f04cae497d3d4a4e840dacd9138c196db1fd61"
+      sha256 "b585f5a192740a93e1a3e4bc98d46d0b731c1b99d0b2ed8b9a619c3f547845ce"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Tripstack-Corp/rmatrix/releases/download/v#{version}/rmatrix-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "eb26f4cd9703adc054e7ad3934043d2c953e5436f4a26f299aa9af60c4adf6d1"
+      sha256 "98b2be1dafc7350817268150e5f3d5a052d17ea0fed6d3605f223ea9cbdfb859"
     end
     on_intel do
       url "https://github.com/Tripstack-Corp/rmatrix/releases/download/v#{version}/rmatrix-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b626d9a12101cbd03f0c8eb8f8327b703b138bf752ec21116c61c71d19c0905a"
+      sha256 "31b1bfbf5003fe519db7c9b278d970a0aa790664d3a45f1231822f525a4dce56"
     end
   end
 
