@@ -5,6 +5,13 @@ class Rmatrix < Formula
   version "0.1.0"
   license "MIT"
 
+  # `brew install --HEAD rmatrix` builds main from source. Declared before the
+  # platform blocks because `brew audit --strict` requires that ordering.
+  head do
+    url "https://github.com/Tripstack-Corp/rmatrix.git", branch: "main"
+    depends_on "rust" => :build
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/Tripstack-Corp/rmatrix/releases/download/v#{version}/rmatrix-#{version}-aarch64-apple-darwin.tar.gz"
@@ -25,12 +32,6 @@ class Rmatrix < Formula
       url "https://github.com/Tripstack-Corp/rmatrix/releases/download/v#{version}/rmatrix-#{version}-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "b626d9a12101cbd03f0c8eb8f8327b703b138bf752ec21116c61c71d19c0905a"
     end
-  end
-
-  # `brew install --HEAD rmatrix` builds main from source.
-  head do
-    url "https://github.com/Tripstack-Corp/rmatrix.git", branch: "main"
-    depends_on "rust" => :build
   end
 
   def install
