@@ -1,7 +1,7 @@
 class Spyc < Formula
   desc "Keyboard-driven, MCP-native terminal file commander"
   homepage "https://github.com/Tripstack-Corp/spyc"
-  version "2.2.0-rc.3"
+  version "2.2.0-rc.4"
   license "BSD-3-Clause"
 
   # `brew install --HEAD spyc` builds the CURRENT stream (main) from source.
@@ -15,22 +15,22 @@ class Spyc < Formula
     # name it because `on_macos` itself may not carry a url/sha256 (brew audit).
     on_arm do
       url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-macos-universal.tar.gz"
-      sha256 "e8322f03fdf1cdac7731e79cb5c01f9eec385c7c22f16198ae268aea7ff29165"
+      sha256 "7c635aae65309b4d43b5bb08123ae36e574eed29f279309bc6542d119d4a6664"
     end
     on_intel do
       url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-macos-universal.tar.gz"
-      sha256 "e8322f03fdf1cdac7731e79cb5c01f9eec385c7c22f16198ae268aea7ff29165"
+      sha256 "7c635aae65309b4d43b5bb08123ae36e574eed29f279309bc6542d119d4a6664"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-linux-x86_64.tar.gz"
-      sha256 "e1d882a8ca881f4addd15b2abf773a06cbadab3609169b24a8061fbf8b54fb95"
+      sha256 "43ac2913c12b2c48bb841953ce241056b06cdbefecb60c278643365c67eedf3a"
     end
     on_arm do
       url "https://github.com/Tripstack-Corp/spyc/releases/download/v#{version}/spyc-v#{version}-linux-aarch64.tar.gz"
-      sha256 "e057a910dcf991c3034c7c9d985ced4bed2020245523d9618ede6d8ed436a760"
+      sha256 "c4a8bc9a24e6c3be712106e9c9e57fb7680bb8abd690fad0aad815063463b29c"
     end
   end
 
